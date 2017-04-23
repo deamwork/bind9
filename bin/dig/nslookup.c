@@ -195,7 +195,8 @@ printsoa(dns_rdata_t *rdata) {
 static void
 printaddr(dns_rdata_t *rdata) {
 	isc_result_t result;
-	char text[sizeof("ffff:ffff:ffff:ffff:ffff:ffff:255.255.255.255")];
+	//char text[sizeof("ffff:ffff:ffff:ffff:ffff:ffff:255.255.255.255")];
+	char text[256];
 	isc_buffer_t b;
 
 	isc_buffer_init(&b, text, sizeof(text));
